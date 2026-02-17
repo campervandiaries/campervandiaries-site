@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,40 +19,36 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 60px;
-    min-height: 80vh;
+    padding: 60px;
+    min-height: 90vh;
 }
 
 /* LOGO */
 .logo {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
 }
 
 .logo img {
-    width: 140px;
+    width: 120px;
 }
 
 /* VAN IMAGE */
-.hero-image {
-    flex: 1.4;
-}
-
 .hero-image img {
+    max-width: 900px;
     width: 100%;
-    max-width: none;
+    background: transparent;
 }
 
 /* RIGHT PANEL */
 .right-panel {
-    flex: 0.6;
     text-align: right;
 }
 
 /* STRIPES */
 .stripes {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .stripe-grey {
@@ -59,25 +56,28 @@ body {
     width: 260px;
     background: #888;
     margin-bottom: 6px;
+    margin-left: auto;
 }
 
 .stripe-orange {
     height: 4px;
-    width: 240px;
+    width: 230px;
     background: #ff6a00;
+    margin-left: auto;
 }
 
-/* NAV BUTTONS */
+/* BUTTONS */
 .nav-buttons a {
     display: block;
-    margin: 8px 0;
-    padding: 12px 18px;
+    margin: 10px 0;
+    padding: 12px 20px;
     background: #1a1a1a;
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: 0.2s;
-    font-size: 15px;
+    width: 220px;
+    margin-left: auto;
 }
 
 .nav-buttons a:hover {
@@ -96,17 +96,52 @@ footer {
     padding: 20px;
     color: #aaa;
 }
+
+/* MOBILE LAYOUT */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .right-panel {
+        text-align: center;
+    }
+
+    .stripe-grey,
+    .stripe-orange {
+        margin: 0 auto 6px auto;
+    }
+
+    .nav-buttons a {
+        margin: 10px auto;
+        width: 80%;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
 <div class="logo">
     <img src="Logo.PNG" alt="Campervan Diaries">
 </div>
 
-<!-- HERO -->
 <div class="hero">
     <div class="hero-image">
         <img src="IMG_8494.png" alt="Campervan">
@@ -128,7 +163,6 @@ footer {
     </div>
 </div>
 
-<!-- SECTIONS -->
 <section id="about">
     <h2>About Us</h2>
     <p>Real van life. Real upgrades. Real problems.</p>

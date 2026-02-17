@@ -13,14 +13,16 @@ body {
     color: white;
 }
 
+/* HERO SECTION */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
+    padding: 40px 60px;
     min-height: 80vh;
 }
 
+/* LOGO */
 .logo {
     position: absolute;
     top: 20px;
@@ -31,17 +33,23 @@ body {
     width: 140px;
 }
 
-.hero-image img {
-    max-width: 100px;
-    width: 100%;
-    background: transparent
-    display: block;
+/* VAN IMAGE */
+.hero-image {
+    flex: 1.4;
 }
 
+.hero-image img {
+    width: 100%;
+    max-width: none;
+}
+
+/* RIGHT PANEL */
 .right-panel {
+    flex: 0.6;
     text-align: right;
 }
 
+/* STRIPES */
 .stripes {
     margin-bottom: 20px;
 }
@@ -59,21 +67,24 @@ body {
     background: #ff6a00;
 }
 
+/* NAV BUTTONS */
 .nav-buttons a {
     display: block;
-    margin: 10px 0;
+    margin: 8px 0;
     padding: 12px 18px;
     background: #1a1a1a;
     color: white;
     text-decoration: none;
     border-radius: 4px;
     transition: 0.2s;
+    font-size: 15px;
 }
 
 .nav-buttons a:hover {
     background: #ff6a00;
 }
 
+/* CONTENT SECTIONS */
 section {
     padding: 60px 20px;
     max-width: 900px;
@@ -90,10 +101,12 @@ footer {
 
 <body>
 
+<!-- LOGO -->
 <div class="logo">
     <img src="Logo.PNG" alt="Campervan Diaries">
 </div>
 
+<!-- HERO -->
 <div class="hero">
     <div class="hero-image">
         <img src="IMG_8494.png" alt="Campervan">
@@ -115,6 +128,7 @@ footer {
     </div>
 </div>
 
+<!-- SECTIONS -->
 <section id="about">
     <h2>About Us</h2>
     <p>Real van life. Real upgrades. Real problems.</p>

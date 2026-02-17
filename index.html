@@ -1,116 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Camper Van Diaries</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #eee;
-    }
-    header {
-      background: #000;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 3px solid #ff7a00;
-    }
-    header h1 {
-      margin: 0;
-      color: #ff7a00;
-    }
-    nav {
-      text-align: center;
-      padding: 10px;
-      background: #1a1a1a;
-    }
-    nav a {
-      color: #eee;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #ff7a00;
-    }
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(#111, #000);
-    }
-    .hero h2 {
-      color: #ff7a00;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-      border-top: 3px solid #ff7a00;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campervan Diaries</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    min-height: 80vh;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.hero-image img {
+    max-width: 600px;
+    width: 100%;
+}
+
+.right-panel {
+    text-align: right;
+}
+
+.stripes {
+    margin-bottom: 20px;
+}
+
+.stripe-grey {
+    height: 4px;
+    width: 220px;
+    background: #888;
+    margin-bottom: 6px;
+}
+
+.stripe-orange {
+    height: 4px;
+    width: 200px;
+    background: #ff6a00;
+}
+
+.nav-buttons a {
+    display: block;
+    margin: 8px 0;
+    padding: 10px 16px;
+    background: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.nav-buttons a:hover {
+    background: #ff6a00;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <img src="AF638DFF-F294-42F6-BA56-BC5221E7C167.png" alt="Camper Van Diaries logo" style="max-width:200px; margin-bottom:10px;">
-  <h1>Camper Van Diaries</h1>
-</header>
+<div class="logo">
+    <img src="logo.png" alt="Campervan Diaries">
+</div>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">About Us</a>
-  <a href="#">About the Van</a>
-  <a href="#">Blog</a>
-  <a href="#">Shop</a>
-</nav>
+<div class="hero">
+    <div class="hero-image">
+        <img src="van.png" alt="Campervan">
+    </div>
 
-<section class="hero">
-  <h2>Real van life. Real upgrades. Real problems.</h2>
-  <p>Follow our black Transit Custom build and UK campsite adventures.</p>
+    <div class="right-panel">
+        <div class="stripes">
+            <div class="stripe-grey"></div>
+            <div class="stripe-orange"></div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#van">About the Van</a>
+            <a href="#blog">Blog</a>
+            <a href="#shop">Shop</a>
+        </div>
+    </div>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Real van life. Real upgrades. Real problems.</p>
 </section>
 
-<section class="section">
-  <h3>About Us</h3>
-  <p>
-    We’re documenting life with our campervan—upgrades, fixes, trips,
-    and honest experiences along the way.
-  </p>
+<section id="van">
+    <h2>About the Van</h2>
+    <p>Black Ford Transit Custom build with real-world upgrades and UK travel.</p>
 </section>
 
-<section class="section">
-  <h3>About the Van</h3>
-  <p>
-    A black Ford Transit Custom camper, originally converted and now
-    being refined and upgraded as we go.
-  </p>
+<section id="blog">
+    <h2>Blog</h2>
+    <p>Build updates and trips coming soon.</p>
 </section>
 
-<section class="section">
-  <h3>Blog</h3>
-  <p>
-    Campsite reviews, trip recaps, and van upgrades will appear here
-    starting in the spring.
-  </p>
-</section>
-
-<section class="section">
-  <h3>Shop</h3>
-  <p>
-    Merchandise and stickers coming in the future.
-  </p>
+<section id="shop">
+    <h2>Shop</h2>
+    <p>Merch and van gear coming soon.</p>
 </section>
 
 <footer>
-  © Camper Van Diaries
+    © Campervan Diaries
 </footer>
 
 </body>
